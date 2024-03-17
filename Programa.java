@@ -3,6 +3,7 @@ public class Programa {
         // Ex01.executar();   
         // Ex02.executar();    
         // Ex03.executar(); 
-        Ex04.executar();
+        // Ex04.executar();
+        Ex05.executar();
     }
 }
