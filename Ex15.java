@@ -21,8 +21,10 @@ public class Ex15 {
 
             Double desconto = carro.descontoPeloCombustivel(carro.valorCarro, carro.tipoCombustivel);
 
+            Prompt.separador();
             Prompt.imprimir("Valor de desconto: " + desconto);
             Prompt.imprimir("Valor a pagar: " + (valorPagar - desconto));
+            Prompt.separador();
 
         }while(carro.valorCarro != 0);
 
