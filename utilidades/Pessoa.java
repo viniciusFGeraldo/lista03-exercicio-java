@@ -5,6 +5,7 @@ public class Pessoa {
     public Integer idade;
     public String nome;
     public Character sexo;
+    public Character saude;
     public Integer qtdFeminino = 0;
     public Integer qtdMasculino = 0;
 
@@ -16,8 +17,7 @@ public class Pessoa {
         }
     }
 
-    /*11. Escrever um programa que leia o nome e o sexo de 56 pessoas e informe o nome e se ela é 
-        homem ou mulher. No final informe total de homens e de mulheres. */
+    /*------------------------------------------------------------------------ */
 
     public void qtdPorSexo(Character sexo, String nome){
         if(sexo == 'f'){
@@ -37,4 +37,19 @@ public class Pessoa {
     public Integer pegarMasculino(){
         return qtdMasculino;
     }
+
+    /*------------------------------------------------------------------------ */
+
+    public void testeDeAptidão(String nome, Character sexo, Integer idade, Character saude){
+        if(sexo == 'f' || idade < 18 || saude == 'n'){
+            Prompt.separador();
+            Prompt.imprimir("Candidato(a): " + nome + " NÃO está apto(a) ao serviço militar obrigatório");
+            Prompt.separador();
+        }else{
+            Prompt.separador();
+            Prompt.imprimir("Candidato(a): " + nome + " está apto(a) ao serviço militar obrigatório");
+            Prompt.separador();
+        }
+    }
+
 }
