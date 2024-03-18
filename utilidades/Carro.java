@@ -10,9 +10,43 @@ public class Carro {
     public Double imposto = 0.45;
     public Double distribuidor = 0.28;
 
+    public Double valorCarro;
+    public Integer anoCarro;
+    public Integer qtdAte2000 = 0;
+    public Integer qtdCarros = 0;
+    public Double desconto = 0.0;
+
+
     public Double custoConsumidor(Double custoFabrica){
         Double valorComImposto = (custoFabrica * imposto) + custoFabrica;
         Double valorConsumidor = (valorComImposto * distribuidor) + valorComImposto;
         return valorConsumidor;
+    }
+
+    /*12. A concessionária de veículos “CARANGO VELHO” está vendendo os seus veículos com 
+    desconto. Faça um programa que calcule e exiba o valor do desconto e o valor a ser pago pelo 
+    cliente de vários carros. O desconto deverá ser calculado de acordo com o ano do veículo. Até 2000 
+    - 12% e acima de 2000 - 7%. O sistema deverá perguntar se deseja continuar calculando desconto 
+    até que a resposta seja: “(N) Não”. Informar total de carros com ano até 2000 e total geral. */
+
+    public Double descontoPeloAno(Double valorCarro, Integer anoCarro, Double desconto){
+        if(anoCarro <= 2000){
+            desconto += (valorCarro * 0.12);
+            qtdAte2000++;
+            qtdCarros++;
+            return desconto;
+        }else{
+            desconto += (valorCarro * 0.07);
+            qtdCarros++;
+            return desconto;
+        }
+    }
+
+    public Integer pegarQtdAte2000(){
+        return qtdAte2000;
+    }
+
+    public Integer pegarQtdCarros(){
+        return qtdCarros;
     }
 }
