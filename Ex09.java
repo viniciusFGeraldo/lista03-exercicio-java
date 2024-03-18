@@ -1,3 +1,6 @@
+import utilidades.Intervalo;
+import utilidades.Prompt;
+
 public class Ex09 {
     public static void executar(){
         /*9. Ler 80 números e ao final informar quantos número(s) est(á)ão no intervalo entre 10 (inclusive) 

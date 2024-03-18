@@ -1,3 +1,5 @@
+import utilidades.*;
+
 public class Ex02 {
     public static void executar(){
         /*2. Escrever um programa para determinar o consumo médio de um automóvel sendo fornecida a 

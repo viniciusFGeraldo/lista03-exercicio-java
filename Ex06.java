@@ -1,3 +1,6 @@
+import utilidades.Produto;
+import utilidades.Prompt;
+
 public class Ex06 {
     public static void executar(){
         /*6. Faça um programa que receba o preço de custo de um produto e mostre o valor de venda.

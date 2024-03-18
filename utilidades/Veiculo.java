@@ -1,7 +1,9 @@
+package utilidades;
+
 public class Veiculo {
 
-    Double distanciaPercorrida;
-    Double combustivelGasto;
+    public Double distanciaPercorrida;
+    public Double combustivelGasto;
 
     public Double consumoMedio(Double dp, Double cg){
         Double consumoMedio = dp / cg;

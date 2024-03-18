@@ -1,3 +1,5 @@
+import utilidades.*;
+
 public class Ex05 {
     public static void executar(){
         /*5. A Loja Mamão com Açúcar está vendendo seus produtos em 5 (cinco) prestações sem juros. 

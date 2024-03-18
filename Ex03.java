@@ -1,3 +1,6 @@
+import utilidades.Loja;
+import utilidades.Prompt;
+
 public class Ex03 {
     public static void executar(){
         /*3. Escrever um programa que leia o nome de um vendedor, o seu salário fixo e o total de vendas 

@@ -1,3 +1,5 @@
+import utilidades.*;
+
 public class Ex07 {
     public static void executar(){
         /*7. O custo ao consumidor de um carro novo é a soma do custo de fábrica com a percentagem do distribuidor e 

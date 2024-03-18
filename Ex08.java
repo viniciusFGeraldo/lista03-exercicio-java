@@ -1,3 +1,5 @@
+import utilidades.*;
+
 public class Ex08 {
     public static void executar(){
         /*8. Escrever um programa que leia o nome e as três notas obtidas por um aluno durante o semestre. 

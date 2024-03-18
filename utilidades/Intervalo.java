@@ -1,7 +1,9 @@
+package utilidades;
+
 public class Intervalo {
 
-    Integer[] num = new Integer[5];
-    Integer contador = 0;
+    public Integer[] num = new Integer[5];
+    public Integer contador = 0;
 
     public void lerNumeros(){
         for(int i = 0;i < 5;i++) {

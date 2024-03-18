@@ -1,6 +1,8 @@
+package utilidades;
+
 public class Pessoa {
 
-    Integer idade;
+    public Integer idade;
 
     public void maioridade(){
         if(idade < 18){

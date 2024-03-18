@@ -1,3 +1,6 @@
+import utilidades.Pessoa;
+import utilidades.Prompt;
+
 public class Ex10 {
     public static void executar(){
         /*10. Faça um programa que receba a idade de um número finito de pessoas e mostre mensagem 

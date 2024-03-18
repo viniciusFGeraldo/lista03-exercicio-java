@@ -1,3 +1,5 @@
+import utilidades.*;
+
 public class Ex01 {
     public static void executar(){
         /*1. Escrever um programa que leia o nome de um aluno e as notas das três provas que ele obteve 

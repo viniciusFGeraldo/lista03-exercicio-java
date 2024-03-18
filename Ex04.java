@@ -1,3 +1,5 @@
+import utilidades.*;
+
 public class Ex04 {
     public static void executar(){
         /*4. Elaborar um programa que efetue a apresentação do valor da conversão em real (R$) de um 

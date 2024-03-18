@@ -1,8 +1,10 @@
+package utilidades;
+
 public class Aluno {
-    String nome;
-    Double nota1;
-    Double nota2;
-    Double nota3;
+    public String nome;
+    public Double nota1;
+    public Double nota2;
+    public Double nota3;
 
 
     public double mediaAritmetica(Double nota1,Double nota2,Double nota3){
