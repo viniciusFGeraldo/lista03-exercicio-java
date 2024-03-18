@@ -12,6 +12,7 @@ public class Carro {
 
     public Double valorCarro;
     public Integer anoCarro;
+    public Character tipoCombustivel;
     public Integer qtdAte2000 = 0;
     public Integer qtdCarros = 0;
     public Double desconto = 0.0;
@@ -48,5 +49,23 @@ public class Carro {
 
     public Integer pegarQtdCarros(){
         return qtdCarros;
+    }
+
+    /*15. A concessionária de veículos “CARANGO” está vendendo os seus veículos com desconto. Faça 
+    um programa que calcule e exiba o valor do desconto e o valor a ser pago pelo cliente. O desconto 
+    deverá ser calculado sobre o valor do veículo de acordo com o combustível (álcool – 25%, gasolina 
+    – 21% ou diesel –14%). Com valor do veículo zero encerra entrada de dados. Informe total de 
+    desconto e total pago pelos clientes. */
+
+    public Double descontoPeloCombustivel(Double valorCarro, Character tipoCombustivel){
+
+        if(tipoCombustivel == 'a'){
+            desconto += (valorCarro * 0.25);
+        }else if(tipoCombustivel == 'g'){
+            desconto += (valorCarro * 0.21);
+        }else if(tipoCombustivel == 'd'){
+            desconto += (valorCarro * 0.14);
+        }
+        return desconto;
     }
 }
