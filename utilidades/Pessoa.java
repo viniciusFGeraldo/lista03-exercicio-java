@@ -8,6 +8,9 @@ public class Pessoa {
     public Character saude;
     public Integer qtdFeminino = 0;
     public Integer qtdMasculino = 0;
+    public Double kw;
+    public Integer tipoConta;
+    public Double calcContaLuz;
 
     public void maioridade(){
         if(idade < 18){
@@ -49,6 +52,26 @@ public class Pessoa {
             Prompt.separador();
             Prompt.imprimir("Candidato(a): " + nome + " está apto(a) ao serviço militar obrigatório");
             Prompt.separador();
+        }
+    }
+
+    /*22. Faça um programa que calcule o valor da conta de luz de uma pessoa. Sabe-se que o cálculo da conta de
+         luz segue a tabela abaixo:
+        Tipo de Cliente Valor do KW/h
+        1 (Residência) 0,60
+        2 (Comércio) 0,48
+        3 (Indústria) 1,29 */
+
+    public void contaLuz(Double kw, Integer tipoConta){
+        if(tipoConta == 1){
+            calcContaLuz = kw * 0.60;
+            Prompt.imprimir("Conta: R$" + calcContaLuz);
+        }else if(tipoConta == 2){
+            calcContaLuz = kw * 0.48;
+            Prompt.imprimir("Conta: R$" + calcContaLuz);
+        }if(tipoConta == 3){
+            calcContaLuz = kw * 1.29;
+            Prompt.imprimir("Conta: R$" + calcContaLuz);
         }
     }
 
