@@ -4,9 +4,11 @@ public class Funcionarios {
 
     public Double salarioReajustado;
     public String nome;
+    public Integer idade;
+    public Character sexo;
     public Double salarioFuncionario;
     public Double salarioMinimo;
-    public Double reajuste;
+    public Double reajuste = 0.0;
     public Double folhaPagamento = 0.0;
 
     /*16. Escrever um programa para uma empresa que decide dar um reajuste a seus 584 funcionários 
@@ -59,6 +61,28 @@ public class Funcionarios {
         Prompt.imprimir("Novo salário: R$" + salarioReajustado);
         Prompt.imprimir("O aumento na folha de pagamento é de: R$" + folhaPagamento);
         Prompt.separador();
+    }
+
+    public void salarioComAbono(String nome, Integer idade, Character sexo, Double salarioFuncionario){
+
+        if((sexo == 'm' || sexo == 'M') && idade >= 30){
+            reajuste += (salarioFuncionario + 100.00);
+            Prompt.imprimir("Funcionário: " + nome + " receberá novo salário de R$" + reajuste);
+        
+        }else if((sexo == 'm' || sexo == 'M') && idade < 30){
+            reajuste += (salarioFuncionario + 50.00);
+            Prompt.imprimir("Funcionário: " + nome + " receberá novo salário de R$" + reajuste);
+
+        }else if((sexo == 'f' || sexo == 'F') && idade >= 30){
+            reajuste += (salarioFuncionario + 200.00);
+            Prompt.imprimir("Funcionário: " + nome + " receberá novo salário de R$" + reajuste);
+
+        }else if((sexo == 'f' || sexo == 'F') && idade < 30){
+            reajuste += (salarioFuncionario + 80.00);
+            Prompt.imprimir("Funcionário: " + nome + " receberá novo salário de R$" + reajuste);
+
+        }
+        
     }
     
 }
