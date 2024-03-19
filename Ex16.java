@@ -13,7 +13,7 @@ public class Ex16 {
 
         Double salarioMinimo = Prompt.lerDecimal("Informe o valor do salário minimo: ");
 
-        for(int i = 0;i < 5;i++){
+        for(int i = 0;i < 584;i++){
             Double salarioFuncionario = Prompt.lerDecimal("Informe o salário do " + (i + 1) + "° funcionário: ");
             Double salarioReajustado = funcionario.reajusteSalarial(salarioMinimo, salarioFuncionario);
 
