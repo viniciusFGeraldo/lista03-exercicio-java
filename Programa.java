@@ -18,6 +18,7 @@ public class Programa {
         // Ex16.executar();
         // Ex17.executar();
         // Ex18.executar();
-        Ex19.executar();
+        // Ex19.executar();
+        Ex20.executar();
     }
 }
