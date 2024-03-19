@@ -6,11 +6,13 @@ public class Pessoa {
     public String nome;
     public Character sexo;
     public Character saude;
+    public Double altura;
     public Integer qtdFeminino = 0;
     public Integer qtdMasculino = 0;
     public Double kw;
     public Integer tipoConta;
     public Double calcContaLuz;
+    public Double pesoIdl;
 
     public void maioridade(){
         if(idade < 18){
@@ -72,6 +74,45 @@ public class Pessoa {
         }if(tipoConta == 3){
             calcContaLuz = kw * 1.29;
             Prompt.imprimir("Conta: R$" + calcContaLuz);
+        }
+    }
+
+    /*23. Faça um programa que leia o nome, o sexo, a altura e a idade de uma pessoa. Calcule e mostre 
+        nome e o seu peso ideal de acordo com as seguintes características da pessoa: */
+
+    public void pesoIdeal(String nome, Character sexo, Double altura, Integer idade){
+        if((sexo == 'm' || sexo == 'M') && altura > 1.70 && idade <= 20){
+            pesoIdl = (72.7 * altura) - 58;
+            Prompt.imprimir("Peso Ideal: " + pesoIdl);
+            
+        }else if((sexo == 'm' || sexo == 'M') && altura > 1.70 && idade > 20 && idade <= 39){
+            pesoIdl = (72.7 * altura) - 53;
+            Prompt.imprimir("Peso Ideal: " + pesoIdl);
+
+        }else if((sexo == 'm' || sexo == 'M') && altura > 1.70 && idade >= 40){
+            pesoIdl = (72.7 * altura) - 45;
+            Prompt.imprimir("Peso Ideal: " + pesoIdl);
+
+        }else if((sexo == 'm' || sexo == 'M') && altura <= 1.70 && idade <= 40){
+            pesoIdl = (72.7 * altura) - 50;
+            Prompt.imprimir("Peso Ideal: " + pesoIdl);
+
+        }else if((sexo == 'm' || sexo == 'M') && altura <= 1.70 && idade > 40){
+            pesoIdl = (72.7 * altura) - 58;
+            Prompt.imprimir("Peso Ideal: " + pesoIdl);
+
+        }else if((sexo == 'f' || sexo == 'F') && altura > 1.50){
+            pesoIdl = (62.1 * altura) - 44.7;
+            Prompt.imprimir("Peso Ideal: " + pesoIdl);
+
+        }else if((sexo == 'f' || sexo == 'F') && altura <= 1.50 && idade >= 35){
+            pesoIdl = (62.1 * altura) - 45;
+            Prompt.imprimir("Peso Ideal: " + pesoIdl);
+
+        }else if((sexo == 'f' || sexo == 'F') && altura > 1.50 && idade < 35){
+            pesoIdl = (62.1 * altura) - 49;
+            Prompt.imprimir("Peso Ideal: " + pesoIdl);
+            
         }
     }
 
