@@ -15,7 +15,11 @@ public class Ex16 {
 
         for(int i = 0;i < 5;i++){
             Double salarioFuncionario = Prompt.lerDecimal("Informe o salário do " + (i + 1) + "° funcionário: ");
-            funcionario.reajusteSalarial(salarioMinimo, salarioFuncionario);
+            Double salarioReajustado = funcionario.reajusteSalarial(salarioMinimo, salarioFuncionario);
+
+            Prompt.separador();
+            Prompt.imprimir("O salário do funcionário passou de R$" + salarioFuncionario + " para o reajuste de R$" + salarioReajustado);
+            Prompt.separador();
         }
         Prompt.linhaEmBranco();
         Prompt.imprimir("FIM DO PROGRAMA!!");
