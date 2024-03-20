@@ -13,7 +13,7 @@ public class Ex01 {
         aluno1.nota2 = Prompt.lerDecimal("Informe o valor da nota2 do aluno: ");
         aluno1.nota3 = Prompt.lerDecimal("Informe o valor da nota3 do aluno: ");
 
-        Double media = aluno1.mediaAritmetica(aluno1.nota1, aluno1.nota2, aluno1.nota3);
+        double media = aluno1.mediaAritmetica(aluno1.nota1, aluno1.nota2, aluno1.nota3);
 
         Prompt.imprimir("O aluno: " + aluno1.nome + " ficou com média: " + media);
     }
