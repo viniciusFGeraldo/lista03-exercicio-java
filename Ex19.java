@@ -18,8 +18,8 @@ public class Ex19 {
         triangulo.lado2 = Prompt.lerInteiro("Informe o 2° valor: ");
         triangulo.lado3 = Prompt.lerInteiro("Informe o 3° valor: ");
 
-        if (Triangulo.formaTriangulo(triangulo.lado1, triangulo.lado2, triangulo.lado3)) {
-            tipoTriangulo = Triangulo.tipoTriangulo(triangulo.lado1, triangulo.lado2, triangulo.lado3);
+        if (triangulo.formaTriangulo(triangulo.lado1, triangulo.lado2, triangulo.lado3)) {
+            tipoTriangulo = triangulo.tipoTriangulo(triangulo.lado1, triangulo.lado2, triangulo.lado3);
             Prompt.imprimir("Os valores informados formam um triângulo do tipo " + tipoTriangulo);
         } else {
             Prompt.imprimir("Os valores informados não formam um triângulo.");
