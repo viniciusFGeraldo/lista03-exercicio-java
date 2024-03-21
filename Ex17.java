@@ -1,4 +1,4 @@
-import utilidades.Funcionarios;
+import utilidades.Funcionario;
 import utilidades.Prompt;
 
 public class Ex17 {
@@ -8,7 +8,7 @@ public class Ex17 {
         empresa vai aumentar sua folha de pagamento. */
 
         Boolean continuar = true;
-        Funcionarios funcionario = new Funcionarios();
+        Funcionario funcionario = new Funcionario();
 
         do {
 

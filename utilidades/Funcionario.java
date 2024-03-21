@@ -1,6 +1,6 @@
 package utilidades;
 
-public class Funcionarios {
+public class Funcionario {
 
     public Double salarioReajustado;
     public String nome;

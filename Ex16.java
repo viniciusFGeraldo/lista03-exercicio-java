@@ -9,7 +9,7 @@ public class Ex16 {
         c) 15% para aqueles que ganham acima de dez até vinte salários mínimos;
         d) 10% para os demais funcionários. */
 
-        Funcionarios funcionario = new Funcionarios();
+        Funcionario funcionario = new Funcionario();
 
         Double salarioMinimo = Prompt.lerDecimal("Informe o valor do salário minimo: ");
 

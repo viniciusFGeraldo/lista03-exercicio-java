@@ -1,4 +1,4 @@
-import utilidades.Funcionarios;
+import utilidades.Funcionario;
 import utilidades.Prompt;
 
 public class Ex18 {
@@ -6,7 +6,7 @@ public class Ex18 {
         /*18. Faça um programa que receba o nome a idade, o sexo e salário fixo de um funcionário. Mostre 
         o nome e o salário líquido acrescido do abono conforme o sexo e a idade: */
 
-        Funcionarios funcionario = new Funcionarios();
+        Funcionario funcionario = new Funcionario();
         Boolean continuar = false;
 
         funcionario.nome = Prompt.lerLinha("Informe o nome do funcionário: ");

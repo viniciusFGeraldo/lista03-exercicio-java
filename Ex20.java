@@ -1,4 +1,4 @@
-import utilidades.Funcionarios;
+import utilidades.Funcionario;
 import utilidades.Prompt;
 
 public class Ex20 {
@@ -9,7 +9,7 @@ public class Ex20 {
         Professor Nível 2 R$17,00 por hora/aula
         Professor Nível 3 R$25,00 por hora/aula */
 
-        Funcionarios funcionario = new Funcionarios();
+        Funcionario funcionario = new Funcionario();
 
         funcionario.horaAula = Prompt.lerInteiro("Informe quantas horas/aula foram feitas:");
         funcionario.nivel = Prompt.lerInteiro("Informe o nivel do professor(1,2 ou 3): ");
